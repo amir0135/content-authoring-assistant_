@@ -1,0 +1,7 @@
+#better to add version numbers of library
+fastapi
+uvicorn
+openai>=1.0.0
+pydantic
+python-dotenv
+requests

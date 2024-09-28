@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: content-authoring-assistant
+spec:
+  replicas: 3  # scale this higher as needed
+  selector:
+    matchLabels:
+      app: content-authoring-assistant
+  template:
+    metadata:
+      labels:
+        app: content-authoring-assistant
+    spec:
+      containers:
+        - name: content-authoring-assistant
+          image: gcr.io/content-authoring-assistant/content_authoring_assistant:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: OPENAI_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: openai-api-secret
+                  key: OPENAI_API_KEY
+          resources:
+            limits:
+              memory: "2Gi"
+              cpu: "1"
+            requests:
+              memory: "1Gi"
+              cpu: "500m"

@@ -1,0 +1,31 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment and dependency files
+.env
+*.env
+
+# Ignore unnecessary directories
+.git/
+*.git/
+node_modules/
+logs/
+*.log
+
+# Ignore large files related to the context
+test.js  # Assuming this is only for testing purposes and not required in production [oai_citation:8,test.js](file-service://file-SWCKRSaoeobTEwTI1PRK3O1g)
+
+# Ignore Kubernetes YAML configuration files (optional if they're not required inside the image)
+deployment.yaml [oai_citation:7,deployment.yaml](file-service://file-Ku6NLyS1vVYXXteYmJLwkG0b)
+service.yaml [oai_citation:6,service.yaml](file-service://file-jHByDKXjGKNwTuLyrUY9ogIE)
+hpa.yaml [oai_citation:5,hpa.yaml](file-service://file-mHOevceYoeFnadgevDbwT5Ps)
+
+# Ignore any additional temporary or unused files
+*.tmp
+*.swp
+
+# Ignore Dockerfile itself
+Dockerfile

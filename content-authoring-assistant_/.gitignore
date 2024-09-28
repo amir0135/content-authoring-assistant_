@@ -1,0 +1,18 @@
+# Ignore the secret.yaml file so it isn't uploaded to GitHub
+secret.yaml
+
+# Ignore environment files
+.env
+
+# Ignore Python bytecode files
+__pycache__/
+
+# Ignore Docker image cache
+*.tar
+
+# Ignore local Docker images or build artifacts
+*.log
+*.tmp
+
+# venv
+languagewire_env

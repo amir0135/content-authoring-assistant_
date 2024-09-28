@@ -1,0 +1,14 @@
+# service.yaml
+# This file defines the Kubernetes service that exposes the application externally.
+apiVersion: v1
+kind: Service
+metadata:
+  name: content-authoring-assistant-service  # Service for load balancing requests to the assistant.
+spec:
+  type: LoadBalancer  # Exposing the service externally with a LoadBalancer.
+  selector:
+    app: content-authoring-assistant  # Selects pods matching this app label.
+  ports:
+    - protocol: TCP
+      port: 80  # Exposing port 80 externally.
+      targetPort: 8000  # Mapping to the container's port 8000.
