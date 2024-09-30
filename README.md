@@ -1,27 +1,25 @@
-
 # Content Authoring Assistant
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
-2. [Functional Requirements](#functional-requirements)
-3. [Non-Functional Requirements](#non-functional-requirements)
-4. [Setup and Installation](#setup-and-installation)
+2. [Supported Functionality](#supported-functionality)
+3. [Setup and Installation](#setup-and-installation)
    - [Prerequisites](#prerequisites)
    - [Installation Steps](#installation-steps)
-5. [Running the Application](#running-the-application)
+4. [Running the Application](#running-the-application)
    - [Example Request Payload](#example-request-payload)
    - [Expected Response](#expected-response)
-6. [Load Testing](#load-testing)
-7. [Deployment to Kubernetes](#deployment-to-kubernetes)
-8. [Evaluation and Optimization](#evaluation-and-optimization)
-9. [Security and Compliance](#security-and-compliance)
-10. [Strategic Roadmap](#strategic-roadmap)
-11. [Technical Design](#technical-design)
+5. [Load Testing](#load-testing)
+6. [Deployment to Kubernetes](#deployment-to-kubernetes)
+7. [Evaluation and Optimization](#evaluation-and-optimization)
+8. [Security and Compliance](#security-and-compliance)
+9. [Strategic Roadmap](#strategic-roadmap)
+
 
 ## Project Overview
 The **Content Authoring Assistant** is a REST API service designed to generate draft texts based on a set of user-defined parameters such as keywords, target audience, tone of voice, and domain. This service allows content creators to quickly generate drafts that can be refined iteratively, enhancing productivity and ensuring a high-quality end result.
 
-## Functional Requirements
+## Supported Functionality
 The Content Authoring Assistant supports the following functionality:
 - **Input Parameters:**
   - `keywords`: A list of keywords or a seed sentence to guide content generation.
@@ -33,8 +31,7 @@ The Content Authoring Assistant supports the following functionality:
 - **Output:**
   - Generates fluent English text based on the provided input parameters.
   - Returns the generated text in UTF-16 format.
-
-## Non-Functional Requirements
+  - 
 - **Cloud Native:** The API must be cloud-native, capable of being deployed on any Kubernetes cluster.
 - **Scalability:** Able to handle 10 concurrent requests with a response time of under 10 seconds.
 - **Compliance:** All data must comply with GDPR, ensuring data residency within the EU.
