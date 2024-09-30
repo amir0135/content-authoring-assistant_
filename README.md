@@ -21,10 +21,6 @@
 ## Project Overview
 The **Content Authoring Assistant** is a REST API service designed to generate draft texts based on a set of user-defined parameters such as keywords, target audience, tone of voice, and domain. This service allows content creators to quickly generate drafts that can be refined iteratively, enhancing productivity and ensuring a high-quality end result.
 
-The project was developed as part of the LanguageWire Machine Learning Tech Team Lead technical challenge to demonstrate the following:
-1. **Technical Expertise:** Designing and building a high-performance, scalable REST API for content generation using Python and cloud-native technologies.
-2. **Team Leadership:** Planning and executing a development strategy that includes considerations for scalability, performance, cost, and security.
-
 ## Functional Requirements
 The Content Authoring Assistant supports the following functionality:
 - **Input Parameters:**
