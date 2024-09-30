@@ -31,9 +31,9 @@ The Content Authoring Assistant supports the following functionality:
 - **Output:**
   - Generates fluent English text based on the provided input parameters.
   - Returns the generated text in UTF-16 format.
-  - 
-- **Cloud Native:** The API must be cloud-native, capable of being deployed on any Kubernetes cluster.
-- **Scalability:** Able to handle 10 concurrent requests with a response time of under 10 seconds.
+
+- **Cloud Native:** The API is cloud-native and capable of being deployed on any Kubernetes cluster.
+- **Scalability:** It can handle up to 10 concurrent requests with a response time of under 10 seconds.
 - **Compliance:** All data must comply with GDPR, ensuring data residency within the EU.
 - **Security:** Sensitive information like API keys and database credentials should be managed using Kubernetes secrets.
 
