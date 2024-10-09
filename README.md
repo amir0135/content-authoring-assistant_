@@ -105,7 +105,7 @@ The response will be a JSON object containing the generated text. An example res
 ## Load Testing
 To perform load testing on the API and evaluate its performance, use the `test.js` script with K6.
 
-1. Ensure that the application is running at `http://localhost:8000` or use the deployed endpoint `http://35.240.49.235`.
+1. Ensure that the application is running at `http://localhost:8000`.
 2. Run the K6 load testing script:
     ```bash
     k6 run src/test.js
